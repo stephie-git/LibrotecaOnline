@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--conector a scss-->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!--Conector a bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+
+    <title>LibrotecaOnline</title>
+</head>
+
+<body>
+
+    <!--Encabezado-->
+  <header>
+    <nav>
+      <h1>LIBROTECA</h1>
+      <p>Libreria online</p>
+    </nav>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Conocenos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Productos & Servicios
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Libros nuevos</a></li>
+                  <li><a class="dropdown-item" href="#">Libros usados</a></li>
+                  <li><a class="dropdown-item" href="#">Para los mas peques!</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+
+      </nav>
+
+  </header>
+
+  <main>
+
+<section class="conocenos">
+    <h2>Nosotros</h2>
+    <p>En nuestra libreria podras encontrar libros nuevos y usados en excelente estado. 
+      Tambien tenemos una gran variedad para niños!
+    </p>
+</section>
+
+<section class="productos"> <!-- Asigné el parametro precio dentro de la función, hasta ver objetos-->
+  <div class="card">
+    <img src="images/Stephen King.jpg" alt="libro stephen King">
+      <h4>Despues</h4>
+        <p>En ocasiones; para crecer debes vencer a tus demonios. 
+          El rey del terror regresa con una nueva e inolvidable novela.
+          N° 1 en la lista de más vendidos del New York Times. (...)</p>
+        <button onclick=(compraRealizada(200))>Comprar</button>
+
+  </div>
+
+  <div class="card">
+    <img src="images/la tia cosi.jpg" alt="tia cosima">
+      <h4>La tia Cosima</h4>
+        <p>Cósima; un nombre para recordar. Una historia de cómo el amor vence al odio. 
+          La nueva novela de Florencia Bonelli; la escritora argentina más leída y admirada de América Latina; vuelve con una historia contemporánea donde coexisten la profesión; 
+          la amistad; el amor y un pasado doloroso que; (...)</p>
+        <button onclick=(compraRealizada(200))>Comprar</button>
+
+  </div>
+
+  <div class="card">
+    <img src="images/El hogar de las niñas.jpg" alt="El hogar de las niñas indeseadas">
+      <h4>El hogar de las niñas indeseadas</h4>
+        <p>'Un estudio de cómo el amor persiste incluso en los momentos más difíciles. 
+          Una novela profunda y significativa; que captura la atención del lector hasta el final.' 
+          Booklist Philomena y El tren de los huérfanos confluyen en esta desgarradora historia sobre el lazo irrompible entre una madre y s (...)</p>
+      <button onclick=(compraRealizada(250))>Comprar</button>
+  </div>
+
+  <div class="card">
+    <img src="images/asesino de brujas.jpg" alt="Asesino de brujas">
+      <h4>Asesino de brujas</h4>
+        <p>La esperada secuela del éxito de ventas del New York Times: 
+          Asesino de brujas. La bruja blanca. Los riesgos son mayores. 
+          brujas son más letales. Y el romance es aún más intenso.
+            (...)</p>
+        <button onclick=(compraRealizada(300))>Comprar</button>
+  </div>
+
+</section>
+
+  </main>
+    
+
+
+<script src="app.js"></script>
+
+</body>
+
+</html>

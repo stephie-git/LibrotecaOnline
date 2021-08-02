@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(182, 201, 146);
+
+
+    h1{
+        font-size: $titulosPrincipales;
+        color: rgb(27, 27, 92);
+    }
+
+    header {
+        padding: 60px;
+        text-align: center;
+        background: #1abc9c;
+        color: white;
+        font-size: 30px;
+    }
+
+    .navbar{
+        margin-top: 80px;
+    }
+
+    .conocenos{
+            h2{
+                margin: 20px 0px 30px 10px;
+            }
+            p{
+                margin-left: 20px;
+                font-size: 20px;
+            }
+
+    }
+
+   .productos{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       gap: 10px;
+       margin: 30px 20px;
+
+        .card{
+            display:flex;
+            flex-direction:column;
+            justify-content: space-between;
+            width: 300px;
+            border:2px solid black;
+            border-radius:10px;
+            h4{
+                flex-grow: 1;
+                text-align: center;
+                margin-top: 15px;
+            }
+            .img{
+                flex-grow:2;
+            }
+            p{
+                flex-grow:1;
+                margin: 10px 12px;
+            }
+        }
+
+   }
+  
+
+
+}
