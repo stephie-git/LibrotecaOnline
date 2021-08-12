@@ -55,6 +55,8 @@ function compraRealizada(precioLibro){
  let nuevoLibro2 = new Libro('La tia cosima', 'Florencia Bonelli', 'Suma', 'drama');
  let nuevoLibro3 = new Libro('El hogar de las niñas indeseadas', 'Joanna Goodman', 'Las rosas', 'drama');
  let nuevoLibro4 = new Libro('Asesino de brujas', 'Shelby Mahurin', 'Los hijos de rey', 'suspenso');
+
+ arrayLibros.sort();
  
  arrayLibros.push(nuevoLibro1, nuevoLibro2, nuevoLibro3, nuevoLibro4);
 
