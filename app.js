@@ -1,3 +1,8 @@
+let arrayLibros = [];//Cuando veamos DOM, voy a utilizar este array para deployar los libros
+let arrayCompras= [];
+
+
+
 let nombreUsuario = prompt('Por favor, ingrese su nombre :)')
 
 let valorIva = 1.21;
@@ -9,7 +14,7 @@ function compraRealizada(precioLibro){
     let precioFinal = precioLibro * cantidadLibros;
     let direccionCliente = prompt('Por favor indicar su direccion');
     let nuevaCompra = new Compra(nombreUsuario, precioFinal, cantidadLibros, direccionCliente);
-
+   arrayCompras.push(nuevaCompra)
 
     alert(`Hola ${nuevaCompra.cliente}, sus ${nuevaCompra.productos} libro/s seran despachados a ${nuevaCompra.direccion}, y el valor es de ${nuevaCompra.precioFinal}. \n El precio con IVA es: ${nuevaCompra.calculoIva()}`);
     console.log(nuevaCompra)
@@ -27,6 +32,8 @@ function compraRealizada(precioLibro){
         return iva
      }
  }
+
+
 
 
 
