@@ -12,9 +12,8 @@ function compraRealizada(precioLibro){
     let direccionCliente = prompt('Por favor indicar su direccion');
     let nuevaCompra = new Compra(nombreUsuario, precioFinal, cantidadLibros, direccionCliente);
    arrayCompras.push(nuevaCompra)
-
-    alert(`Hola ${nuevaCompra.cliente}, sus ${nuevaCompra.productos} libro/s seran despachados a ${nuevaCompra.direccion}, y el valor es de ${nuevaCompra.precioFinal}. \n El precio con IVA es: ${nuevaCompra.calculoIva()}`);
-    console.log(nuevaCompra)
+   
+   nuevaCompra.infoCompra()
 }
 
  class Compra{
@@ -27,6 +26,10 @@ function compraRealizada(precioLibro){
      calculoIva(){
         let iva = this.precioFinal = this.precioFinal * this.productos * valorIva; 
         return iva
+     }
+     infoCompra(){
+      alert(`Hola ${this.cliente}, sus ${this.productos} libro/s seran despachados a ${this.direccion}, y el valor es de ${this.precioFinal}. \n El precio con IVA es: ${this.calculoIva()}`);
+      console.log(this)
      }
  }
 
@@ -56,10 +59,10 @@ function compraRealizada(precioLibro){
  let nuevoLibro3 = new Libro('El hogar de las niñas indeseadas', 'Joanna Goodman', 'Las rosas', 'drama');
  let nuevoLibro4 = new Libro('Asesino de brujas', 'Shelby Mahurin', 'Los hijos de rey', 'suspenso');
 
- arrayLibros.sort();
  
  arrayLibros.push(nuevoLibro1, nuevoLibro2, nuevoLibro3, nuevoLibro4);
-
+ arrayLibros.sort();
+ 
  console.log(arrayLibros);
 
 
