@@ -22,10 +22,11 @@ body{
     .conocenos{
             h2{
                 margin: 20px 0px 30px 10px;
+                font-size: 50px;
             }
             p{
                 margin-left: 20px;
-                font-size: 20px;
+                font-size: 35px;
             }
 
     }
@@ -36,6 +37,7 @@ body{
        justify-content: space-around;
        gap: 10px;
        margin: 30px 20px;
+       flex-wrap: wrap;
 
         .card{
             display:flex;
@@ -63,7 +65,8 @@ body{
 
 .estilosDiv{
     font-size: 40px;
-    color: blueviolet;
+    color: black;
     text-align: center;
+    margin-top: 70px;
 
 }

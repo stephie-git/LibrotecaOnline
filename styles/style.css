@@ -21,11 +21,12 @@ body .navbar {
 
 body .conocenos h2 {
   margin: 20px 0px 30px 10px;
+  font-size: 50px;
 }
 
 body .conocenos p {
   margin-left: 20px;
-  font-size: 20px;
+  font-size: 35px;
 }
 
 body .productos {
@@ -40,6 +41,8 @@ body .productos {
       justify-content: space-around;
   gap: 10px;
   margin: 30px 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body .productos .card {
@@ -81,7 +84,8 @@ body .productos .card p {
 
 .estilosDiv {
   font-size: 40px;
-  color: blueviolet;
+  color: black;
   text-align: center;
+  margin-top: 70px;
 }
 /*# sourceMappingURL=style.css.map */

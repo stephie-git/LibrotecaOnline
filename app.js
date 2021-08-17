@@ -46,6 +46,85 @@ arrayLibros=[
       genero: 'Suspenso',
       precio: '900'
    },
+
+   {
+      titulo: 'Borges y yo',
+      parrafo: 'Jay Parini era un joven poeta y estudiante de literatura estadounidense cuando conoció a Jorge Luis Borges. El encuentro fortuito con el formidable escritor que narran estas páginas cambió para siempre su vida y su forma de ver la literatura.',
+      autor: 'Jay Parini',
+      imagen: "images/borges y yo.jpg",
+      editorial: 'emece',
+      genero: 'drama',
+      precio: '890'
+   },
+   {
+      titulo: 'Kaidu',
+      parrafo: '¿Qué sucede cuando Juan le presenta a Aína su singular perro callejero? Kaidú, un compañero no humanizado, la cautiva a primera vista y acorta la distancia entre los tres. Ella reconoce con sorpresa el deseo de compartir más tiempo con él; en poco tiempo, la pasión se multiplica.',
+      autor: 'Paula Perez Alonso',
+      imagen: "images/Kaidu.jpg",
+      editorial: 'tusQuets',
+      genero: 'Novela Contemporanea',
+      precio: '1000'
+
+   },
+
+   {
+      titulo: 'Gotico',
+      parrafo: 'Tras recibir una extraña carta de su prima recién casada, Noemí Taboada se dirige a High Place, una casa en el campo en México, sin saber qué encontrará allí. Noemí no parece tener dotes de salvadora: es glamurosa, más acostumbrada a asistir a cócteles que a las tareas de detective...',
+      autor: 'Silvia Moreno-Garcia',
+      imagen: "images/gotico.jpg",
+      editorial: 'The guardian',
+      genero: 'Terror',
+      precio: '1200'
+   },
+
+   {
+      titulo: 'Merca',
+      parrafo: '¿Es Merca una novela sobre el odio (hipótesis interesante) o sobre la cocaína (bastante menos)? No: el odio y la cocaína son el combustible que sostiene el ritmo de la voz narrativa de Johnny, una verborrea trepidante y paranoica... ',
+      autor: 'Pablo Escudero',
+      imagen: "images/Merca.jpg",
+      editorial: 'Emece',
+      genero: 'Novela Literaria',
+      precio: '1200'
+   },
+
+   {
+      titulo: 'La desconocida',
+      parrafo: 'Para saber quién soy, primero necesitas conocer mi historia. Porque no soy Nora, esa chica normal, con una vida normal en un vecindario normal…',
+      autor: 'Milu Avellaneda',
+      imagen: "images/la desconocida.jpg",
+      editorial: 'Cross Books',
+      genero: 'Thriller',
+      precio: '1100'
+   },
+   {
+      titulo: 'Abzurdah',
+      parrafo: 'Una muchacha camina al borde del abismo. Cielo Latini, niña precoz, sensible y creativa, educada en una familia “normal”, siempre una enfant terrible fascinada por el arte y por la muerte, cuenta cómo su adolescencia fue un descenso a los infiernos.',
+      autor: 'Cielo Latini',
+      imagen: "images/Abzurdah.jpg",
+      editorial: 'Las Rosas',
+      genero: 'Drama',
+      precio: '700'
+
+   },
+
+   {
+      titulo: 'La voz ausente',
+      parrafo: 'Las cosas no siempre son como parecen, y cuanto más cerca aparenta estar el mundo de cierta calma, mayor suele ser la tormenta que se gesta en lo inespe - rado.',
+      autor: 'Gabriel Rolon',
+      imagen: "images/la vos ausente.jpg",
+      editorial: 'Emece',
+      genero: 'Drama',
+      precio: '900'
+   },
+   {
+      titulo: 'Los gatos pardos',
+      parrafo: 'Tres personajes viven una noche de San Juan en Murcia que difícilmente van a olvidar. Jacinto es un guardaespaldas mexicano que trabaja para don Jorge y que tiene que encargarse, mientras su patrón celebra una gran fiesta, de saldar cuentas con quienes han matado a un protegido.',
+      autor: 'Gines Sanchez',
+      imagen: "images/los gatos pardos.jpg",
+      editorial: 'TusQuets',
+      genero: 'Novela historica',
+      precio: '590'
+   }
 ];
 
 let nombreUsuario = prompt('Por favor, ingrese su nombre :)')
