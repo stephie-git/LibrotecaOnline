@@ -3,7 +3,7 @@ let parrafo = document.createElement('p');
 parrafo.innerHTML = 'Compra con un solo click y recibilos desde tu casa!!'
 prueba.appendChild(parrafo);
 prueba.classList.add('estilosDiv');
-
+let userName = document.getElementById('userName')
 let valorIva = 1.21;
 
 let arrayCompras= [];
@@ -123,12 +123,22 @@ arrayLibros=[
       imagen: "images/los gatos pardos.jpg",
       editorial: 'TusQuets',
       genero: 'Novela historica',
-      precio: '590'
+      precio: ''
    }
 ];
 
-let nombreUsuario = prompt('Por favor, ingrese su nombre :)')
+let nombreUsuario;
 
+function setNombreUsuario(){
+   nombreUsuario = prompt('Por favor, ingrese su nombre :)');
+   if(nombreUsuario != null || ""){
+      userName.innerHTML = `Bienvenido a Libroteca, ${nombreUsuario}!`
+   }else{
+      userName.innerHTML = `Bienvenido a Libroteca!`
+   }
+}
+
+setNombreUsuario()
 
 function compraRealizada(precioLibro){
     let cantidadLibros = prompt('¿Cuantas unidades desea adquirir?' );
@@ -179,7 +189,6 @@ function compraRealizada(precioLibro){
    arrayLibros.push(libroCreado)
 }
 
- arrayLibros.sort();
  
  function crearTarjetas(libros){
     let contenedorProductos = document.getElementById('productos');
@@ -206,7 +215,4 @@ function compraRealizada(precioLibro){
    })
 }
 
-
-
-crearTarjetas(arrayLibros)
 
