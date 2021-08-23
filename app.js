@@ -212,7 +212,13 @@ function compraRealizada(precioLibro){
       contenedorProductos.appendChild(divTarjeta);
 
       botonCompra.addEventListener('click', event=>compraRealizada(element.precio))
+      botonCompra.addEventListener('mouseover', event=>{
+         botonCompra.classList.add('hoverBoton')
+      });
+      botonCompra.addEventListener('mouseleave', event=> {
+         botonCompra.classList.remove('hoverBoton')
+      })
    })
 }
 
-
+crearTarjetas(arrayLibros);

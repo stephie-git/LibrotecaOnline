@@ -88,4 +88,10 @@ body .productos .card p {
   text-align: center;
   margin-top: 70px;
 }
+
+.hoverBoton {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #1abc9c;
+}
 /*# sourceMappingURL=style.css.map */
