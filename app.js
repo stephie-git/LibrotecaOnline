@@ -211,6 +211,14 @@ function compraRealizada(precioLibro){
       divTarjeta.append(tapaLibros, tituloLibros, parrafoLibros, botonCompra);
       contenedorProductos.appendChild(divTarjeta);
 
+      divTarjeta.addEventListener('mouseover', event=> {
+         divTarjeta.classList.add('boxColor')
+      
+      });
+      divTarjeta.addEventListener('mouseleave', event=> {
+         divTarjeta.classList.remove('boxColor')
+      })
+
       botonCompra.addEventListener('click', event=>compraRealizada(element.precio))
       botonCompra.addEventListener('mouseover', event=>{
          botonCompra.classList.add('hoverBoton')
@@ -218,7 +226,10 @@ function compraRealizada(precioLibro){
       botonCompra.addEventListener('mouseleave', event=> {
          botonCompra.classList.remove('hoverBoton')
       })
+
+      
    })
 }
 
 crearTarjetas(arrayLibros);
+
