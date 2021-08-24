@@ -23,7 +23,7 @@ arrayLibros=[
       autor: 'Florencia Bonelli',
       imagen: "images/la tia cosi.jpg",
       editorial: 'Suma',
-      genero: 'Romance',
+      genero: 'Novela',
       precio: '600'
 
    },
@@ -62,7 +62,7 @@ arrayLibros=[
       autor: 'Paula Perez Alonso',
       imagen: "images/Kaidu.jpg",
       editorial: 'tusQuets',
-      genero: 'Novela Contemporanea',
+      genero: 'Novela',
       precio: '1000'
 
    },
@@ -83,7 +83,7 @@ arrayLibros=[
       autor: 'Pablo Escudero',
       imagen: "images/Merca.jpg",
       editorial: 'Emece',
-      genero: 'Novela Literaria',
+      genero: 'Novela',
       precio: '1200'
    },
 
@@ -93,7 +93,7 @@ arrayLibros=[
       autor: 'Milu Avellaneda',
       imagen: "images/la desconocida.jpg",
       editorial: 'Cross Books',
-      genero: 'Novela Literaria',
+      genero: 'Novela',
       precio: '1100'
    },
    {
@@ -122,7 +122,7 @@ arrayLibros=[
       autor: 'Gines Sanchez',
       imagen: "images/los gatos pardos.jpg",
       editorial: 'TusQuets',
-      genero: 'Novela historica',
+      genero: 'Novela',
       precio: '800'
    }
 ];
@@ -240,3 +240,7 @@ console.log(librosTerror)
 let librosDrama = arrayLibros.filter(x=>x.genero == 'Drama')
 
 console.log(librosDrama)
+
+let librosNovela = arrayLibros.filter(x=>x.genero == 'Novela')
+
+console.log(librosNovela)
