@@ -14,7 +14,7 @@ arrayLibros=[
       autor:'Stephen King',
       imagen:'images/Stephen King.jpg',
       editorial: 'Puerto de palos',
-      genero:'terror',
+      genero:'Terror',
       precio: '700'
    },
    {
@@ -43,7 +43,7 @@ arrayLibros=[
       autor: 'Shelby Mahurin',
       imagen: "images/asesino de brujas.jpg",
       editorial: 'Blend',
-      genero: 'Suspenso',
+      genero: 'Terror',
       precio: '900'
    },
 
@@ -53,7 +53,7 @@ arrayLibros=[
       autor: 'Jay Parini',
       imagen: "images/borges y yo.jpg",
       editorial: 'emece',
-      genero: 'drama',
+      genero: 'Drama',
       precio: '890'
    },
    {
@@ -93,7 +93,7 @@ arrayLibros=[
       autor: 'Milu Avellaneda',
       imagen: "images/la desconocida.jpg",
       editorial: 'Cross Books',
-      genero: 'Thriller',
+      genero: 'Novela Literaria',
       precio: '1100'
    },
    {
@@ -123,7 +123,7 @@ arrayLibros=[
       imagen: "images/los gatos pardos.jpg",
       editorial: 'TusQuets',
       genero: 'Novela historica',
-      precio: ''
+      precio: '800'
    }
 ];
 
@@ -233,3 +233,10 @@ function compraRealizada(precioLibro){
 
 crearTarjetas(arrayLibros);
 
+let librosTerror = arrayLibros.filter(x=>x.genero == 'Terror')
+
+console.log(librosTerror)
+
+let librosDrama = arrayLibros.filter(x=>x.genero == 'Drama')
+
+console.log(librosDrama)
