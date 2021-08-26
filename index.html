@@ -26,6 +26,7 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
 
 <body>
 
+
     <!--Encabezado-->
   <header>
     <nav>
@@ -33,6 +34,11 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
       <p>Libreria online</p>
       <span id='userName'></span>
 
+      <form  id="cliente">
+        <input type="text" id='userNameInput'>
+        <input type='submit' id='formSubmit'>
+      </form>
+    
     </nav>
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -75,7 +81,6 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Buscar</button>
-              <button onclick=(newBook())>AÑADIR NUEVO LIBRO</button>
             </form>
           </div>
         </div>

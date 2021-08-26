@@ -4,7 +4,21 @@ parrafo.innerHTML = 'Compra con un solo click y recibilos desde tu casa!!'
 prueba.appendChild(parrafo);
 prueba.classList.add('estilosDiv');
 let userName = document.getElementById('userName')
+let userNameInput = document.getElementById('userNameInput');
+let formSubmit = document.getElementById('formSubmit');
 let valorIva = 1.21;
+userName.innerHTML = `Bienvenido a Libroteca!`
+formSubmit.addEventListener('click', setNombreUsuario);
+let nombreUsuario;
+
+function setNombreUsuario(){
+   if(userNameInput.value == null || undefined){
+      return
+   }else{
+     userName.innerHTML = `Bienvenido a Libroteca, ${userNameInput.value}!`;
+     nombreUsuario = userNameInput.value;
+   }
+}
 
 let arrayCompras= [];
 arrayLibros=[
@@ -127,18 +141,8 @@ arrayLibros=[
    }
 ];
 
-let nombreUsuario;
 
-function setNombreUsuario(){
-   nombreUsuario = prompt('Por favor, ingrese su nombre :)');
-   if(nombreUsuario != null || ""){
-      userName.innerHTML = `Bienvenido a Libroteca, ${nombreUsuario}!`
-   }else{
-      userName.innerHTML = `Bienvenido a Libroteca!`
-   }
-}
 
-setNombreUsuario()
 
 function compraRealizada(precioLibro){
     let cantidadLibros = prompt('¿Cuantas unidades desea adquirir?' );
@@ -197,15 +201,7 @@ function compraRealizada(precioLibro){
  }
 
 
- function newBook(){ //Boton que utilizaria el admin de la pagina para añadir libros al catalogo de venta.
-   let tituloLibro = prompt('Indique el titulo del libro')
-   let autorLibro = prompt('Indique el autor del libro')
-   let editorialLibro = prompt('Indique la editorial del libro')
-   let generoLibro = prompt('Indique el titulo del libro')
 
-   let libroCreado = new Libro(tituloLibro, autorLibro, editorialLibro, generoLibro, imagen);
-   arrayLibros.push(libroCreado)
-}
 
  
  function crearTarjetas(libros){
