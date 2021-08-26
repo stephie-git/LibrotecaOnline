@@ -148,6 +148,7 @@ function compraRealizada(precioLibro){
    arrayCompras.push(nuevaCompra)
    
    nuevaCompra.infoCompra()
+   guardarCompra(arrayCompras );
 }
 
  class Compra{
@@ -166,6 +167,17 @@ function compraRealizada(precioLibro){
       console.log(this)
      }
  }
+
+ const guardarCompra = (valor) => { 
+      let x = JSON.stringify(valor)
+      let comprasLocal = JSON.parse(localStorage.getItem('Compra') || []);
+      comprasLocal.push(valor);
+
+      localStorage.setItem('Compras', JSON.stringify(comprasLocal))
+
+   };
+
+
 
  class Libro{
     constructor(titulo, autor, editorial, genero, imagen)
@@ -244,3 +256,4 @@ console.log(librosDrama)
 let librosNovela = arrayLibros.filter(x=>x.genero == 'Novela')
 
 console.log(librosNovela)
+
