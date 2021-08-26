@@ -145,10 +145,10 @@ function compraRealizada(precioLibro){
     let precioFinal = precioLibro * cantidadLibros;
     let direccionCliente = prompt('Por favor indicar su direccion');
     let nuevaCompra = new Compra(nombreUsuario, precioFinal, cantidadLibros, direccionCliente);
-   arrayCompras.push(nuevaCompra)
    
    nuevaCompra.infoCompra()
-   guardarCompra(arrayCompras );
+
+   guardarCompra(nuevaCompra);
 }
 
  class Compra{
@@ -168,14 +168,20 @@ function compraRealizada(precioLibro){
      }
  }
 
+ //JSON LOCAL STORAGE
+
  const guardarCompra = (valor) => { 
-      let x = JSON.stringify(valor)
-      let comprasLocal = JSON.parse(localStorage.getItem('Compra') || []);
+   let comprasLocal = [];
+
+   if(!localStorage.getItem('Compras')) {
       comprasLocal.push(valor);
-
-      localStorage.setItem('Compras', JSON.stringify(comprasLocal))
-
-   };
+      localStorage.setItem('Compras', JSON.stringify(comprasLocal));
+   } else {
+      comprasLocal = JSON.parse(localStorage.getItem('Compras'));
+      comprasLocal.push(valor);
+      localStorage.setItem('Compras', JSON.stringify(comprasLocal));
+   }
+};
 
 
 
