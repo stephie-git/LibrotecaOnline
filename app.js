@@ -21,7 +21,8 @@ function setNombreUsuario(){
 }
 
 let arrayCompras= [];
-arrayLibros=[
+
+let arrayLibros=[
    {
       titulo:'Después', 
       parrafo:'En ocasiones; para crecer debes vencer a tus demonios. El rey del terror regresa con una nueva e inolvidable novela. N° 1 en la lista de más vendidos del New York Times. (...)',
@@ -29,7 +30,8 @@ arrayLibros=[
       imagen:'images/Stephen King.jpg',
       editorial: 'Puerto de palos',
       genero:'Terror',
-      precio: '700'
+      precio: '700',
+      categoria: 'Nuevos'
    },
    {
       titulo: 'La tia Cosima',
@@ -38,7 +40,8 @@ arrayLibros=[
       imagen: "images/la tia cosi.jpg",
       editorial: 'Suma',
       genero: 'Novela',
-      precio: '600'
+      precio: '600',
+      categoria: 'Nuevos'
 
    },
    {
@@ -48,7 +51,8 @@ arrayLibros=[
       imagen: "images/El hogar de las niñas.jpg",
       editorial: 'ABC',
       genero: 'Drama',
-      precio: '570'
+      precio: '570',
+      categoria: 'Usados'
    },
 
    {
@@ -58,7 +62,8 @@ arrayLibros=[
       imagen: "images/asesino de brujas.jpg",
       editorial: 'Blend',
       genero: 'Terror',
-      precio: '900'
+      precio: '900',
+      categoria: 'Nuevos'
    },
 
    {
@@ -68,7 +73,8 @@ arrayLibros=[
       imagen: "images/borges y yo.jpg",
       editorial: 'emece',
       genero: 'Drama',
-      precio: '890'
+      precio: '890',
+      categoria: 'Usados'
    },
    {
       titulo: 'Kaidu',
@@ -77,7 +83,8 @@ arrayLibros=[
       imagen: "images/Kaidu.jpg",
       editorial: 'tusQuets',
       genero: 'Novela',
-      precio: '1000'
+      precio: '1000',
+      categoria: 'Nuevos'
 
    },
 
@@ -88,7 +95,8 @@ arrayLibros=[
       imagen: "images/gotico.jpg",
       editorial: 'The guardian',
       genero: 'Terror',
-      precio: '1200'
+      precio: '1200',
+      categoria: 'Nuevos'
    },
 
    {
@@ -98,7 +106,8 @@ arrayLibros=[
       imagen: "images/Merca.jpg",
       editorial: 'Emece',
       genero: 'Novela',
-      precio: '1200'
+      precio: '1200',
+      categoria: 'Nuevos'
    },
 
    {
@@ -108,7 +117,8 @@ arrayLibros=[
       imagen: "images/la desconocida.jpg",
       editorial: 'Cross Books',
       genero: 'Novela',
-      precio: '1100'
+      precio: '1100',
+      categoria: 'Usados'
    },
    {
       titulo: 'Abzurdah',
@@ -117,7 +127,8 @@ arrayLibros=[
       imagen: "images/Abzurdah.jpg",
       editorial: 'Las Rosas',
       genero: 'Drama',
-      precio: '700'
+      precio: '700',
+      categoria: 'Usados'
 
    },
 
@@ -128,7 +139,8 @@ arrayLibros=[
       imagen: "images/la vos ausente.jpg",
       editorial: 'Emece',
       genero: 'Drama',
-      precio: '900'
+      precio: '900',
+      categoria: 'Nuevos'
    },
    {
       titulo: 'Los gatos pardos',
@@ -137,12 +149,153 @@ arrayLibros=[
       imagen: "images/los gatos pardos.jpg",
       editorial: 'TusQuets',
       genero: 'Novela',
-      precio: '800'
+      precio: '800',
+      categoria: 'Usados'
+   },
+
+   {
+      titulo: 'El arte del Lettering: Amor',
+      parrafo: 'Un libro tan práctico como inspirador. Aprende paso a paso cómo dominar una variedad de estilos de lettering, los cuales puedes practicar con hermosas frases de Disney..',
+      autor: 'Disney',
+      imagen: "images/Princesas.jpg",
+      editorial: 'Planeta',
+      genero: 'Infantil',
+      precio: '800',
+      categoria: 'Niños'
+   },
+
+   {
+      titulo: 'Anna encuentra una amiga',
+      parrafo: 'Mucho antes de salvar Arendelle¡Anna buscaba una amiga!Los padres de Anna están de viaje y ella se siente terriblemente sola.',
+      autor: 'Disney',
+      imagen: "images/Anna.jpg",
+      editorial: 'Planeta Junior',
+      genero: 'Infantil',
+      precio: '900',
+      categoria: 'Niños'
+   },
+
+   {
+      titulo: 'Luca. La novela',
+      parrafo: 'Ambientada en una ciudad costera de la Riviera Italiana, la película de Disney y Pixar,',
+      autor: 'Disney',
+      imagen: "images/Luca.jpg",
+      editorial: 'Planeta Junior',
+      genero: 'Infantil',
+      precio: '900',
+      categoria: 'Niños'
+   },
+
+   {
+      titulo: 'La saga de los distintos 2',
+      parrafo: 'En Animalia hay cuatro reinos distintos. Son Reinos que no se conocen entre sí, que ignoran la existencia de los otros. ',
+      autor: 'Chanti',
+      imagen: "images/La saga de los gatos.jpg",
+      editorial: 'Planeta Junior',
+      genero: 'Infantil',
+      precio: '700',
+      categoria: 'Niños'
+   },
+
+   {
+      titulo: 'Mandalorian',
+      parrafo: 'Inspírate en el universo de Star Wars para despertar a tu artista interior.',
+      autor: 'Disney',
+      imagen: "images/Mandalorian.jpg",
+      editorial: 'Planeta Junior',
+      genero: 'Infantil',
+      precio: '900',
+      categoria: 'Niños'
+   },
+
+   {
+      titulo: 'Soul',
+      parrafo: 'El músico Joe Gardner se separa de su cuerpo en el día más importante de su vida.',
+      autor: 'Disney',
+      imagen: "images/Soul.jpg",
+      editorial: 'Planeta Junior',
+      genero: 'Infantil',
+      precio: '1000',
+      categoria: 'Niños'
+   },
+
+   {
+      titulo: 'Mulan',
+      parrafo: 'Los hunos han cruzado la Gran Muralla y su líder Shan-Yu avanza imparable.',
+      autor: 'Disney',
+      imagen: "images/Mulan.jpg",
+      editorial: 'Planeta Junior',
+      genero: 'Infantil',
+      precio: '800',
+      categoria: 'Niños'
+   },
+
+   {
+      titulo: 'El Principito',
+      parrafo: 'El clásico de la literatura, no solo infantil, narra la historia del Principito,',
+      autor: 'Antoine De Saint-Exupéry',
+      imagen: "images/El Principito.jpg",
+      editorial: 'Planeta Lector Argentino',
+      genero: 'Infantil',
+      precio: '900',
+      categoria: 'Niños'
+   },
+
+   {
+      titulo: 'El Papa Francisco',
+      parrafo: 'Sinopsis de Papa Francisco debajo del fuego',
+      autor: 'Andrea Tornielli',
+      imagen: "images/Papa francisco.jpg",
+      editorial: 'PLANETAPT',
+      genero: 'Drama',
+      precio: '400',
+      categoria: 'Usados'
+   },
+
+   {
+      titulo: 'Isla decepcion',
+      parrafo: 'Tras fracasar en el amor y renunciar a un trabajo que odia, Marcela huye de su vida en Santiago para visitar a su padre en Punta Arenas',
+      autor: 'Paulina Flores',
+      imagen: "images/decepcion.jpg",
+      editorial: 'Seix Barral',
+      genero: 'Drama',
+      precio: '500',
+      categoria: 'Usados'
+   },
+
+   {
+      titulo: 'Transbordo en Moscú',
+      parrafo: 'Tras fracasar en el amor y renunciar a un trabajo que odia, Marcela huye de su vida en Santiago para visitar a su padre en Punta Arenas',
+      autor: 'Eduardo Mendoza',
+      imagen: "images/Moscu.jpg",
+      editorial: 'Seix Barral',
+      genero: 'Drama',
+      precio: '500',
+      categoria: 'Usados'
+   },
+
+   {
+      titulo: 'Los besos',
+      parrafo: 'Cuando el amor descubre el sentido más profundo de la vida',
+      autor: 'Manuel Vilas',
+      imagen: "images/Los besos.jpg",
+      editorial: 'Editorial Planeta',
+      genero: 'Novela',
+      precio: '500',
+      categoria: 'Usados'
+   },
+
+   {
+      titulo: 'Fresas con chocolate',
+      parrafo: 'Francesca, una joven argentina que estudia Arquitectura, viaja de intercambio a España y en poco tiempo se atreverá a ir más allá de lo que jamás se había permitido.',
+      autor: 'Jazmín Riera',
+      imagen: "images/Fresas con chocolate.jpg",
+      editorial: 'Editorial Planeta',
+      genero: 'Novela',
+      precio: '700',
+      categoria: 'Nuevos'
    }
 ];
-
-
-
 
 function compraRealizada(precioLibro){
     let cantidadLibros = prompt('¿Cuantas unidades desea adquirir?' );
@@ -190,25 +343,21 @@ function compraRealizada(precioLibro){
 
 
  class Libro{
-    constructor(titulo, autor, editorial, genero, imagen)
+    constructor(titulo, autor, editorial, genero, imagen, categoria)
     {
        this.titulo = titulo;
        this.autor = autor;
        this.editorial = editorial;
        this.genero = genero;
        this.imagen = imagen;
+       this.categoria = categoria;
     }
  }
 
-
-
-
- 
  function crearTarjetas(libros){
     let contenedorProductos = document.getElementById('productos');
 
     libros.forEach(element =>{
-      console.log(element)
       let divTarjeta = document.createElement('div');
       let tapaLibros = document.createElement('img');
       let tituloLibros = document.createElement('h4');
@@ -247,15 +396,68 @@ function compraRealizada(precioLibro){
 
 crearTarjetas(arrayLibros);
 
+//Filtrado por genero
+
 let librosTerror = arrayLibros.filter(x=>x.genero == 'Terror')
-
-console.log(librosTerror)
-
 let librosDrama = arrayLibros.filter(x=>x.genero == 'Drama')
-
-console.log(librosDrama)
-
 let librosNovela = arrayLibros.filter(x=>x.genero == 'Novela')
+let librosInfantil = arrayLibros.filter(x=>x.genero == 'Infantil')
 
-console.log(librosNovela)
+let arrayGeneros = ['Todos','Terror', 'Drama', 'Novela', 'Infantil']
+let listadoGenero = document.getElementById('listadoGenero')
 
+arrayGeneros.forEach(genero=>{
+   let li= document.createElement('li')
+   li.innerHTML=genero
+   li.addEventListener('click',event=>filtrarGenero(event.target.innerText))
+
+   listadoGenero.appendChild(li)
+})
+
+function filtrarGenero(genero){
+   let contenedorProductos = document.getElementById('productos');
+   if(genero == 'Todos'){
+      contenedorProductos.innerHTML = "";
+      crearTarjetas(arrayLibros)
+   }else{
+      console.log(genero)
+      let filtrado= arrayLibros.filter(x=>x.genero == genero)
+      console.log(filtrado)
+      contenedorProductos.innerHTML = "";
+      crearTarjetas(filtrado)
+
+   }
+}
+
+//Filtrado por categoria
+
+let librosNuevos = arrayLibros.filter(x=>x.categoria == 'Nuevos')
+let librosUsados = arrayLibros.filter(x=>x.categoria == 'Usados')
+let librosNiños = arrayLibros.filter(x=>x.categoria == 'Niños')
+
+
+let arrayCategoria = ['Nuevos','Usados', 'Niños']
+let listadoCategoria = document.getElementById('listadoCategoria')
+
+arrayCategoria.forEach(categoria=>{
+   let li= document.createElement('li')
+   li.innerHTML=categoria
+   li.addEventListener('click',event=>filtrarCategoria(event.target.innerText))
+
+   listadoCategoria.appendChild(li)
+})
+
+function filtrarCategoria(categoria){
+   let contenedorProductos = document.getElementById('productos');
+   if(categoria == 'Todos'){
+      contenedorProductos.innerHTML = "";
+      crearTarjetas(arrayLibros)
+   }else{
+      console.log(categoria)
+      let filtradoCategoria= arrayLibros.filter(x=>x.categoria == categoria)
+      console.log(filtradoCategoria)
+      contenedorProductos.innerHTML = "";
+      crearTarjetas(filtradoCategoria)
+
+   }
+}
