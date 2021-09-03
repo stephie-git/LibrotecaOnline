@@ -461,3 +461,9 @@ function filtrarCategoria(categoria){
 
    }
 }
+
+//JQUERY
+
+$(document).ready(function() {
+   $("#basic-form").validate();
+ });
