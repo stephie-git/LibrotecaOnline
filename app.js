@@ -367,7 +367,7 @@ function compraRealizada(precioLibro){
       divTarjeta.classList.add('card');
 
 
-      
+
 
       tapaLibros.src = element.imagen;
       tituloLibros.innerHTML = element.titulo;
@@ -481,3 +481,12 @@ $('#subtitulo').append('Libreria Online');
 $('.tituloNosotros').append('Nosotros');
 
 $('#descripcioNosotros').append('En nuestra libreria podras encontrar libros nuevos y usados en excelente estado. Tambien tenemos una gran variedad para niños!');
+
+$('#tituloPagina').animate(
+   {  left:'250px',
+      opacity:'0.5',
+      height:'150px',
+      width:'150px'} , 
+      "slow",             
+      function(){        
+      });
