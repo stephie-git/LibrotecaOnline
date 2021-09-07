@@ -28,8 +28,8 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
     <!--Encabezado-->
   <header>
     <nav>
-      <h1>LIBROTECA</h1>
-      <p>Libreria online</p>
+      <h1 id="tituloPagina"></h1>
+      <p id="subtitulo"></p>
       <span id='userName'></span>
 
       <form  id="cliente">
@@ -86,9 +86,8 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
 <main>
 
   <section class="conocenos">
-    <h2>Nosotros</h2>
-    <p>En nuestra libreria podras encontrar libros nuevos y usados en excelente estado. 
-      Tambien tenemos una gran variedad para niños!
+    <h2 class="tituloNosotros"></h2>
+    <p id="descripcioNosotros">
     </p>
   </section>
 
@@ -100,7 +99,9 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
   </section>
 
   <section class="estilosForm">
-    <h2 class="subtituloForm"> Dejanos tus datos y te contactamos para mas info!!!</h2>
+    <p id="subtituloForm">
+     
+    </p>
     <form id="basic-form" action="" method="post">
       <p>
         <label for="name">Nombre <span>(requerido)</span></label>
@@ -121,10 +122,10 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
 </main>
     
 
-
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="app.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
+
 
 
 </body>

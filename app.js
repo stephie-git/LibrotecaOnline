@@ -362,8 +362,12 @@ function compraRealizada(precioLibro){
       let tapaLibros = document.createElement('img');
       let tituloLibros = document.createElement('h4');
       let botonCompra = document.createElement('button');
+      botonCompra.setAttribute('id', 'botonQuery')
       let parrafoLibros = document.createElement('p');
       divTarjeta.classList.add('card');
+
+
+      
 
       tapaLibros.src = element.imagen;
       tituloLibros.innerHTML = element.titulo;
@@ -382,11 +386,11 @@ function compraRealizada(precioLibro){
          divTarjeta.classList.remove('boxColor')
       })
 
-      botonCompra.addEventListener('click', event=>compraRealizada(element.precio))
-      botonCompra.addEventListener('mouseover', event=>{
+      $('#botonQuery').on('click', event=>compraRealizada(element.precio))
+      $('#botonQuery').on('mouseover', event=>{
          botonCompra.classList.add('hoverBoton')
       });
-      botonCompra.addEventListener('mouseleave', event=> {
+      $('#botonQuery').on('mouseleave', event=> {
          botonCompra.classList.remove('hoverBoton')
       })
 
@@ -467,3 +471,13 @@ function filtrarCategoria(categoria){
 $(document).ready(function() {
    $("#basic-form").validate();
  });
+
+ $('#subtituloForm').append('Dejanos tus datos para contactarte por novedades');
+
+$('#tituloPagina').append('LIBROTECA');
+
+$('#subtitulo').append('Libreria Online');
+
+$('.tituloNosotros').append('Nosotros');
+
+$('#descripcioNosotros').append('En nuestra libreria podras encontrar libros nuevos y usados en excelente estado. Tambien tenemos una gran variedad para niños!');
