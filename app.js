@@ -11,6 +11,8 @@ userName.innerHTML = `Bienvenido a Libroteca!`
 formSubmit.addEventListener('click', setNombreUsuario);
 let nombreUsuario;
 
+
+
 function setNombreUsuario(){
    if(userNameInput.value == null || undefined){
       return
@@ -19,6 +21,8 @@ function setNombreUsuario(){
      nombreUsuario = userNameInput.value;
    }
 }
+
+
 
 let arrayCompras= [];
 
@@ -482,6 +486,8 @@ $('.tituloNosotros').append('Nosotros');
 
 $('#descripcioNosotros').append('En nuestra libreria podras encontrar libros nuevos y usados en excelente estado. Tambien tenemos una gran variedad para niños!');
 
+
+
 $('#tituloPagina').animate(
    {  left:'250px',
       opacity:'0.5',
@@ -490,3 +496,32 @@ $('#tituloPagina').animate(
       "slow",             
       function(){        
       });
+      
+
+ $('#subtituloForm').animate( {
+   'font-size':30, 
+   'border-width':5}, {
+      duration : 'fast',
+      specialEasing : {
+         'font-size' : 'swing',
+         'border-width' : 'linear'
+      }
+   });
+   
+   $('.tituloUbicacion').append('Estamos aca!!');
+
+$(function(){
+   $('.estilosForm').css('float','right');
+   $('.estilosMapa').css('float','left');
+});
+
+$('.estilosMapa').css('margin-left','60px');
+$('.estilosForm').css('margin-right','200px');
+
+
+
+
+$("body").prepend('<h3  style="display: none" >¡Gracias por visitarnos!</h3>');
+$("body").prepend('<h3  style="display: none" >¡Gracias por visitarnos!</h3>');
+
+$("h3").fadeIn();
