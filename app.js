@@ -520,8 +520,9 @@ $('.estilosForm').css('margin-right','200px');
 
 
 
+$('#saludoFinal').append('Gracias por visitarnos');
+$('#saludoFinal').css('margin-top','700px');
 
-$("body").prepend('<h3  style="display: none" >¡Gracias por visitarnos!</h3>');
-$("body").prepend('<h3  style="display: none" >¡Gracias por visitarnos!</h3>');
-
-$("h3").fadeIn();
+$('#descripcioNosotros').css('color', '#1abc9c')
+        .slideUp(1000)
+        .slideDown(2000);
