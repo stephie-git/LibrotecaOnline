@@ -10,15 +10,17 @@ let valorIva = 1.21;
 userName.innerHTML = `Bienvenido a Libroteca!`
 formSubmit.addEventListener('click', setNombreUsuario);
 let nombreUsuario;
+let nameForm = $('#cliente');
 
 
 
 function setNombreUsuario(){
-   if(userNameInput.value == null || undefined){
+   if(userNameInput.value == undefined){
       return
    }else{
      userName.innerHTML = `Bienvenido a Libroteca, ${userNameInput.value}!`;
      nombreUsuario = userNameInput.value;
+     nameForm.css('display','none');
    }
 }
 
@@ -390,11 +392,11 @@ function compraRealizada(precioLibro){
          divTarjeta.classList.remove('boxColor')
       })
 
-      $('#botonQuery').on('click', event=>compraRealizada(element.precio))
-      $('#botonQuery').on('mouseover', event=>{
+      botonCompra.addEventListener('click', event=>compraRealizada(element.precio))
+      botonCompra.addEventListener('mouseover', event=>{
          botonCompra.classList.add('hoverBoton')
       });
-      $('#botonQuery').on('mouseleave', event=> {
+      botonCompra.addEventListener('mouseleave', event=> {
          botonCompra.classList.remove('hoverBoton')
       })
 
