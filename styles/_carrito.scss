@@ -1,0 +1,42 @@
+.removerBtn{
+    position:absolute;
+    width:40px;
+    height:40px;
+    background-color:black;
+    color:white;
+    top: 0;
+    right:0;
+}
+
+.card{
+    position:relative;
+}
+
+.contenedorCompra{
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom:2px solid rgba(144, 238, 144, 0.637);
+}
+.infoCompra{
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    #precioFinal{
+        font-weight: bolder;
+    }
+}
+
+#formInput{
+    display:flex;
+    justify-content: center;
+    width:150px;
+    .formInput{
+        display:flex;
+        flex-direction:column;
+        .label{
+            width:50%;
+        }
+    }
+}

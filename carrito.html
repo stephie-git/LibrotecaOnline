@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--conector a scss-->
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!--Conector a bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>LibrotecaOnline📚</title>
+  </head>
+
+  <body>
+    <!--Encabezado-->
+    <header>
+      <nav>
+        <h1 id="tituloPagina"></h1>
+        <p id="subtitulo"></p>
+        <span id="userName"></span>
+      </nav>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Home</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./carrito.html"
+                  id="carrito"
+                  >Carrito</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Productos & Servicios
+                </a>
+                <ul
+                  id="listadoCategoria"
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdown"
+                ></ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Genero
+                </a>
+                <ul
+                  id="listadoGenero"
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdown"
+                ></ul>
+              </li>
+            </ul>
+
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder=""
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h2 id='carritoTitle'>CARRITO</h2>
+      <div class='contenedorCompra' id='contenedorCompra'>
+        <div id='formCompra'>
+          <div class="formInput">
+            <label for="userName">NOMBRE Y APELLIDO</label>
+            <input type="text" name="userName" id="userTag" />
+          </div>
+          <div class="formInput">
+            <label for="direccion">DIRECCIÓN</label>
+            <input type="text" name="direccion" id="direccion" />
+          </div>
+          <div class="formInput">
+            <label for="email">E-MAIL</label>
+            <input type="email" name="direccion" id="email" />
+          </div>
+        </div>
+            <div class='infoCompra' id='infoCompra'>
+              <span id="precioFinal" class='userData'></span>
+              <span id="cantLibros" class='userData'></span>
+              <span id="datosUsuario" class='userData'></span>
+              <button id='botonCompra'>COMPRAR</button>
+            </div>
+
+      </div>
+
+        <div id="contenedorCarrito" class="contenedorCarrito">
+
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="./js/carrito.js"></script>
+  </body>
+</html>
